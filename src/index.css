@@ -1,0 +1,64 @@
+:root {
+  /* Основные цвета */
+  --color-background: #101216;
+  --color-surface: #191d26;
+  --color-white: #f5f7fa;
+  --color-muted: #a0a8b6;
+
+  /* Акцентный цвет */
+  --color-accent: #83aaff;
+
+  /* Границы */
+  --color-border: rgba(255, 255, 255, 0.12);
+
+  /* Геометрия */
+  --container-width: 1280px;
+
+  /* Анимации */
+  --transition-base: 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background: var(--color-background);
+  color: var(--color-white);
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #101216;
+}
